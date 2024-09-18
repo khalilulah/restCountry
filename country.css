@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito Sans", sans-serif;
+    background-color:hsl(207, 26%, 17%);
+    color:white;
+}
+.btn-div{
+    margin-left:30px;
+}
+header{
+    height: 50px;
+    background-color: hsl(209, 23%, 22%);
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    padding: 0 2%;
+    margin-bottom:15px;
+}
+header p{
+    background:transparent;
+}
+header h5{
+    background:transparent;
+}
+.container{
+    width: 99.5%;
+    height: 90vh;
+    /* border: 2px solid; */
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:70px;
+    /* padding: 0 70px 0 30px; */
+}
+.flag{
+    margin-right:40px;
+}
+#image{
+    height:300px;
+    width:400px;
+    box-shadow:5px 5px 5px rgba(0,0,0,0.3),-5px -5px 5px rgba(0,0,0,0.3);
+}
+.country-info{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    width: 450px;
+    height: 300px;
+    margin-left: 40px;
+    margin-top:5px;
+    /* border: 2px solid; */
+}
+.right-char{
+    margin-left:2px
+}
+#country-name h1{
+    margin-bottom:20px;
+}
+#border-countries{
+    display: inline;
+}
+.country-char{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid; */
+    height:100px;
+    line-height:1.7;
+    width: 450px;
+    margin-bottom:30px;
+    font-size:14px;
+    /*  */
+}
+#border-countries p{
+    margin-bottom:5px;
+    margin-top:15px;
+}
+span{
+    color: rgb(173, 173, 173);
+}
+button{
+    width: 80px;
+     background-color: hsl(209, 23%, 22%);
+     width:100px; 
+     margin:3px 6px 3px 0;
+     padding:5px 0px;
+     border:none;
+     border-radius:3px;
+     cursor:pointer;
+     box-shadow:2px 2px 5px rgba(0,0,0,0.3),-1px -1px 5px rgba(0,0,0,0.3);
+}
+@media (max-width: 985px){
+.container{
+    flex-direction:column;
+    margin-top:40px;
+}
+#country-name h1{
+    width:80%;
+    margin-top:20px;
+}
+.country-info{
+    margin-left:0;
+}
+}
+@media (max-width: 536px){
+.country-char{
+    width:95%;
+    flex-direction:column;
+    height:auto;
+    align-items:start;
+}
+.container{
+    justify-content:start;
+}
+.flag{
+    margin-right:0px;
+    width:80%;
+}
+.left-char{
+    margin-bottom:30px;
+}
+#image{
+    width:95%;
+    height:100%;
+    min-width:280px;
+    /* margin-left: 12%; */
+}
+.country-info{
+    width:80%;
+    margin-left:0;
+}
+}
